@@ -3,6 +3,12 @@ from maze import Maze
 import time
 
 def main():
+    """
+    main.py reads in a maze file, searches for a solution per the specified search type, and prints out
+    the answer if a solution can be found. big_factor is an integer multiple to increase the size of the
+    maze, where 1 is normal, 2 is double, 3 is triple, etc. play determines whether to play back the solution
+    to the user (0 is no, 1 is yes), and delay is how many seconds between frames.
+    """
     if len(sys.argv) != 6:
         sys.exit("usage: python main.py filename search_type big_factor play delay")
     filename = sys.argv[1]
